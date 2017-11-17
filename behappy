@@ -1,0 +1,15 @@
+#!/bin/bash
+
+while (true)
+do
+	echo -e $' \e[90mwhisper: \e[95m*beep boop*'
+	read -p $' \e[0mAre you happy yet? ' yn
+	case $yn in
+		[Yy]* ) break;;
+	esac
+	echo " "
+done
+
+echo " "
+echo -e $' \e[1m\e[91mYEEY!'
+echo " "
